@@ -10,12 +10,11 @@ html, body {
   height: 100vh; /* Full viewport height */
 }
 
-.btn-head{
+.btn-head {
   display: flex;
   justify-content: right;
   gap: 20px;
 }
-
 
 .btn-head button {
   background-color: #EED9C4; /* Button background color */
@@ -25,7 +24,6 @@ html, body {
   font-size: 16px; /* Font size */
   cursor: pointer; /* Pointer cursor on hover */
   border-radius: 5px; /* Rounded corners */
-  /* transition: background-color 0.3s ease;  */
 }
 
 .btn-head button:hover {
@@ -40,17 +38,49 @@ html, body {
 }
 
 .p1 {
-  max-width: 800px;
-  padding: 10rem;
+  display: flex; /* Use flexbox to arrange children in a row */
+  align-items: flex-start; /* Align items to the start of the flex container */
   text-align: left;
+  max-width: 1000px;
+  /* margin: 0 auto;  */
+  margin-left: 10rem;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.text-content {
+  max-width: 800px; /* Adjust the width as needed */
+  padding-right: 10rem;
+  padding-top: 4rem;
+  text-align: left;
+  
+}
+
+.image-container {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  margin-left: 40px; /* Optional: add some margin to the left */
+  margin-top: 8rem;
+
+}
+
+.circular-image {
+  width: 300px; /* Adjust the width */
+  height: 300px; /* Adjust the height */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  /* padding-top: 2rem; */
+  padding : 2rem;
 }
 
 .body {
   flex: 1; /* Takes up the remaining space */
-  padding: 20px;
-  /* background-color: #ffffff; Main content background color */
+  padding: 40px;
   color: #333; /* Text color */
+  display: flex;align-items: flex-start;
   text-align: center;
+  gap: 80px;
 }
 
 .footer {
@@ -58,4 +88,5 @@ html, body {
   background-color: #323232; /* Footer background color */
   color: white; 
   text-align: center;
+  position: sticky;
 }
