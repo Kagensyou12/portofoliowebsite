@@ -1,0 +1,43 @@
+/* About.css */
+.abt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Use full height without exceeding */
+    position: relative; /* Ensure the container is positioned relatively */
+  }
+  
+  .abt-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align children to the left */
+    margin-top: -15rem; /* Adjust the wrapper to move up slightly */
+  }
+  
+  .abt-title {
+    text-align: center;
+    font-size: large;
+    margin: 0;
+    padding-left: 20rem; /* Adjust this value to position the title horizontally */
+    margin-top: 10rem;
+  }
+
+  .line {
+    width: 80rem; /* Adjust this value to expand the line width */
+    margin: 0 auto; /* Center the line */
+    border: 0;
+    height: 1px;
+    background: black; /* Line color */
+    margin-left: 20rem;
+}
+  
+  .abt-content {
+    text-align: left;
+    margin-top: 20px; /* Add some space between the title and content */
+    padding-left: 20rem; /* Adjust this value to position the content horizontally */
+    width: 70%;
+    font-size: 1.2rem;
+    
+  }
+  
