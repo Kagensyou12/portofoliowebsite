@@ -4,6 +4,8 @@ import './styling/App.css';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import AboutMe from './pages/About.jsx';
+import Contact from './pages/Contact.jsx';
+import Project from './pages/Project.jsx';
 
 
 function Home() {
@@ -39,6 +41,8 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route exact path='/home' element={<Home />} />
         <Route exact path='/about' element={<AboutMe />} />
+        <Route exact path='/contact' element={<Contact />} />
+        <Route exact path='/projects' element={<Project />} />
         </Routes>
       </main>
       <Footer />

@@ -1,0 +1,30 @@
+.project-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    position: relative; /* Ensure the container is positioned relatively */
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+.project-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align children to the left */
+    margin-top: -15rem; 
+    /* padding-top : 5rem; */
+    width: 100%; /* Ensure it takes full width */
+}
+
+.project-title {
+    text-align: center;
+  font-size: large;
+  margin: 0;
+  padding-left: 15rem; /* Adjust this value to position the title horizontally */
+  margin-top: -10rem;
+}
+
+.project-content{
+    margin-top: 20px;
+}

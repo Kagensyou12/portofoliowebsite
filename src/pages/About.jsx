@@ -1,5 +1,8 @@
 import React from "react";
 import '../styling/About.css';
+import Experience from "../components/Experience";
+import Skills from "../components/Skills";
+
 
 function AboutMe() {
     return (
@@ -26,16 +29,10 @@ function AboutMe() {
                     My ultimate goal is to leverage my skills and knowledge to make a meaningful impact in the tech industry, contributing to projects that improve people's lives and push the boundaries of what's possible.
                     </p>
                 </div>
+                <hr className="line"/>
             </div>
-{/* I have to work this out so that whenever i put on a new things onto the website it wouldnt change or effect the other things that i have build. such as this one the about me
-page is being push up instead of staying at the same place as i have designed it to. */}
-            <div className="experience">
-                <h1>This is where i want to put all of my experience</h1>
-            </div>
-
-            <div className="skills">
-                <h1>This is where i want to put all of my skills</h1>
-            </div>
+            <Experience />
+            <Skills />
         </div>
     );
 }
