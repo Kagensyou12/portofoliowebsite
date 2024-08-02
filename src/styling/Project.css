@@ -3,28 +3,42 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%; 
+    height: 100%;
     position: relative; /* Ensure the container is positioned relatively */
-    box-sizing: border-box; /* Ensure padding and borders are included in width */
+    box-sizing: border-box;
+    margin-left: 16rem;
 }
 
 .project-holder {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align children to the left */
-    margin-top: -15rem; 
-    /* padding-top : 5rem; */
+    align-items: center; /* Center children horizontally */
     width: 100%; /* Ensure it takes full width */
+    position: relative; /* Make sure the holder is positioned relatively */
+}
+
+.title-container {
+    position: absolute; /* Position title absolutely within .project-holder */
+    top: 10%; /* Adjust top position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center title by offsetting its width */
+    z-index: 10; /* Ensure the title is above the cards */
 }
 
 .project-title {
     text-align: center;
-  font-size: large;
-  margin: 0;
-  padding-left: 15rem; /* Adjust this value to position the title horizontally */
-  margin-top: -10rem;
+    font-size: large;
+    margin: 0;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.project-content{
-    margin-top: 20px;
+.project-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if there are too many cards */
+    justify-content: center; /* Center cards horizontally */
+    gap: 10rem; /* Space between cards */
+    position: relative; /* Ensure it’s below the title */
+    z-index: 1; /* Ensure cards are below the title */
 }

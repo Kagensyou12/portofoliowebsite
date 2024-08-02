@@ -1,20 +1,16 @@
 import React from "react";
-import './Card.css';
+import "../styling/Card.css";
 
-function Card({ image, title, description}){
+const Card = ({ title, desc, image}) => {
     return (
         <div className="card">
-            <img src="{image}" alt="" className="card-img" />
-            <div className="card-container">
-                <h3 className="title">
-                    {title}
-                </h3>
-                <p className="desc">
-                    {description}
-                </p>
+           {image && <img src={image} alt="" className="card-image"/>}
+            <div className="card-content">
+                <h2 className="card-title">{title}</h2>
+                <p className="card-desc">{desc}</p>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Card;

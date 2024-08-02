@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: -15rem;
+    margin-top: 10rem;
     width: 100%;
 }
 
@@ -104,3 +104,6 @@
     align-self: flex-start; /* Align items to the start */
     margin-top: 0.5rem; /* Adjust this value to align with the heading */
 }
+
+
+
