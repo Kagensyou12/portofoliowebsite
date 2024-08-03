@@ -68,13 +68,13 @@
     }
   
     .title-container {
-      top: -3%; /* Further adjust top position for very small screens */
+      top: -2%; /* Further adjust top position for very small screens */
     }
   
     .project-content {
       margin-top: 2rem;
-      flex-direction: column; /* Stack cards vertically */
-      gap: 3rem; /* Further reduce space between cards */
+      /* flex-direction: column; Stack cards vertically */
+      gap: 2rem; /* Further reduce space between cards */
     }
   }
   

@@ -55,7 +55,7 @@
 /* Styles for phones (screens less than 480px wide) */
 @media (max-width: 480px) {
   .card {
-    width: 100%;
+    width: 80%;
     margin: 10px 0; /* Adjust margin to fit cards within the screen */
   }
 
