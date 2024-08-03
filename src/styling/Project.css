@@ -6,7 +6,7 @@
     height: 100%;
     position: relative; /* Ensure the container is positioned relatively */
     box-sizing: border-box;
-    margin-left: 10rem;
+    margin-left: 15rem;
   }
   
   .project-holder {

@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   margin: 0;
   background-color: #000435;
+  /* overflow: hidden; */
 }
 
 .App {
@@ -11,14 +12,12 @@ html, body {
   flex-direction: column;
 }
 
-/* Default styles for desktop */
-body {
-  font-size: 16px;
-  padding: 20px;
-}
+
+
+
 
 /* Styles for tablets (screens less than 768px wide) */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   body {
     font-size: 14px;
     padding: 15px;
@@ -47,45 +46,76 @@ body {
     width: 200px;
     height: 200px;
   }
-}
+} */
 
 /* Styles for phones (screens less than 480px wide) */
-@media (max-width: 480px) {
-  body {
-    font-size: 12px;
-    padding: 10px;
-  }
 
-  .header {
-    padding: 10px;
-    font-size: 14px;
-  }
 
-  .p1 {
-    margin-top: 3rem;
-    padding: 10px;
-  }
 
-  .text-content {
-    font-size: 16px;
-  }
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .header {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .p1 {
+      flex-direction: column; /* Stack items vertically on mobile */
+      align-items: center;
+      margin-left: 0;
+      padding: 10px;
+    }
+  
+    .text-content {
+      font-size: 16px;
+      text-align: center;
+      max-width: 100%; /* Full width */
+      padding-right: 0;
+    }
+  
+    .image-container {
+      margin-left: 0;
+      margin-top: 2rem;
+    }
+  
+    .circular-image {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .btn-head {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .btn-head button {
+      width: 100%;
+      padding: 10px;
+    }
 
-  .circular-image {
-    width: 150px;
-    height: 150px;
+    .text-content {
+      max-width: 20rem; /* Adjust the width as needed */
+      padding-right: 10rem;
+      padding-top: 4rem;
+      text-align: left;
+      font-size: 20px;
+      font-family: 'Demi';
+    }
   }
+  @media (max-width: 767px) {
+    .btn-head {
+      flex-direction: row; /* Change layout to row on mobile */
+      justify-content: flex-end; /* Align buttons to the right */
+    }
 
-  .btn-head {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
 
-  .btn-head button {
-    width: 100%;
-    padding: 10px;
   }
-}
+ 
 
 .body {
   flex: 1;
@@ -157,7 +187,7 @@ header, footer {
 .image-container {
   flex-shrink: 0; /* Prevent the image from shrinking */
   margin-left: 40px; /* Optional: add some margin to the left */
-  margin-top: 10rem;
+  margin-top: 15rem;
 }
 
 .circular-image {
