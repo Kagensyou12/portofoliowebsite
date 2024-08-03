@@ -22,7 +22,7 @@
   text-align: center;
   font-size: large;
   margin: 0;
-  padding-left: 15rem; /* Adjust this value to position the title horizontally */
+  padding-left: 10rem; /* Adjust this value to position the title horizontally */
   margin-top: 20rem;
 }
 
@@ -32,20 +32,20 @@
   border: 0;
   height: 1px;
   background: white; /* Line color */
-  margin-left: 15rem;
+  margin-left: 10rem;
 }
 
 .abt-content {
   text-align: left;
   margin-top: 20px; /* Add some space between the title and content */
-  padding-left: 15rem; /* Adjust this value to position the content horizontally */
+  padding-left: 10rem; /* Adjust this value to position the content horizontally */
   width: calc(100% - 30rem); /* Adjust width to account for padding */
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
 .experience {
-  padding: 2rem 13rem; /* Adjust horizontal padding to fit within the viewport */
+  padding: 2rem 8rem; /* Adjust horizontal padding to fit within the viewport */
   margin-top: 2rem; /* Adjust margin as needed */
   width: calc(100% - 4rem); /* Adjust width to fit within the viewport */
   box-sizing: border-box; /* Include padding in width calculation */
@@ -59,7 +59,7 @@
 
 /* Skills Container */
 .skills {
-  padding: 2rem 13rem; /* Adjust horizontal padding as needed */
+  padding: 2rem 8rem; /* Adjust horizontal padding as needed */
   margin-top: 2rem; /* Adjust margin as needed */
   width: calc(100% - 4rem); /* Ensure full width minus padding */
   box-sizing: border-box; /* Include padding in width calculation */
