@@ -22,6 +22,30 @@ body {
   body {
     font-size: 14px;
     padding: 15px;
+}
+
+  .p1 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .text-content {
+    max-width: 100%;
+    padding-right: 0;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .image-container {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .circular-image {
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -31,8 +55,37 @@ body {
     font-size: 12px;
     padding: 10px;
   }
-}
 
+  .header {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .p1 {
+    margin-top: 3rem;
+    padding: 10px;
+  }
+
+  .text-content {
+    font-size: 16px;
+  }
+
+  .circular-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .btn-head {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn-head button {
+    width: 100%;
+    padding: 10px;
+  }
+}
 
 .body {
   flex: 1;
@@ -42,7 +95,6 @@ header, footer {
   position: relative;
   z-index: 100; /* Ensure header/footer are above the canvas */
 }
-
 
 .btn-head {
   display: flex;
@@ -59,7 +111,7 @@ header, footer {
   cursor: pointer; /* Pointer cursor on hover */
   border-radius: 5px; /* Rounded corners */
   font-size: 15px;
-  font-family: 'Demi'
+  font-family: 'Demi';
 }
 
 .btn-head button:hover {
@@ -85,15 +137,12 @@ header, footer {
   align-items: flex-start; /* Align items to the start of the flex container */
   text-align: left;
   max-width: 1000px;
-  /* margin: 0 auto;  */
   margin-left: 10rem;
   padding: 20px;
   box-sizing: border-box;
   justify-content: space-between;
   color: white;
   margin-top: 5rem;
-  /* font-size: 20px; */
-  
 }
 
 .text-content {
@@ -103,14 +152,12 @@ header, footer {
   text-align: left;
   font-size: 20px;
   font-family: 'Demi';
-  
 }
 
 .image-container {
   flex-shrink: 0; /* Prevent the image from shrinking */
   margin-left: 40px; /* Optional: add some margin to the left */
   margin-top: 10rem;
-
 }
 
 .circular-image {
@@ -118,8 +165,7 @@ header, footer {
   height: 300px; /* Adjust the height */
   border-radius: 50%; /* Make the image circular */
   object-fit: cover; /* Ensure the image covers the container without distortion */
-  /* padding-top: 2rem; */
-  padding : 2rem;
+  padding: 2rem;
 }
 
 .body {
@@ -136,16 +182,15 @@ header, footer {
 .footer {
   padding: 20px;
   background-color: #323232; /* Footer background color */
-  color: white; 
+  color: white;
   text-align: center;
   position: sticky;
 }
 
-.footer div{
- display: flex;
- align-items: center;
+.footer div {
+  display: flex;
+  align-items: center;
 }
-
 
 .footer-0 {
   display: flex;
@@ -153,7 +198,7 @@ header, footer {
   gap: 40px;
 }
 
-.footer-0 a{
+.footer-0 a {
   display: flex;
   align-items: center;
   color: white;
@@ -161,42 +206,16 @@ header, footer {
   gap: 10px;
 }
 
-/* .footer-0 a:hover {
-  background-color: #D3C2A3;
-} */
-
 .footer-0 img {
   width: 30px;
   height: 30px;
   gap: 0;
 }
 
-.footer-0 div:hover{
+.footer-0 div:hover {
   background-color: #D3C2A3;
   border-radius: 20px;
 }
-
-/* .footer-0 img:hover {
-  background-color: #D3C2A3;
-} */
-
-
-/* .p1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
-} */
-/* 
-.text-content {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-} */
 
 .animate__animated {
   animation-duration: 1s;
@@ -255,13 +274,9 @@ header, footer {
 
 @font-face {
   font-family: 'Demi';
-  src: url('../../src/fonts/TT\ Norms\ Pro\ Serif\ Trial\ DemiBold.ttf');
+  src: url('../../src/fonts/TT Norms Pro Serif Trial DemiBold.ttf');
 }
 
-/* Rest of your CSS code */
 * {
   font-family: 'Demi', sans-serif;
 }
-
-
-

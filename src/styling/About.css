@@ -1,9 +1,10 @@
+/* General Styles */
 .abt {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%; 
+  height: 100%;
   position: relative; /* Ensure the container is positioned relatively */
   box-sizing: border-box; /* Ensure padding and borders are included in width */
   color: white;
@@ -13,8 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align children to the left */
-  margin-top: -15rem; 
-  /* padding-top : 5rem; */
+  margin-top: -15rem;
   width: 100%; /* Ensure it takes full width */
 }
 
@@ -22,12 +22,12 @@
   text-align: center;
   font-size: large;
   margin: 0;
-  padding-left: 10rem; /* Adjust this value to position the title horizontally */
+  padding-left: 10rem;
   margin-top: 20rem;
 }
 
 .line {
-  width: 80rem; /* Adjust this value to expand the line width */
+  width: 80rem;
   margin: 0 auto; /* Center the line */
   border: 0;
   height: 1px;
@@ -37,18 +37,18 @@
 
 .abt-content {
   text-align: left;
-  margin-top: 20px; /* Add some space between the title and content */
-  padding-left: 10rem; /* Adjust this value to position the content horizontally */
-  width: calc(100% - 30rem); /* Adjust width to account for padding */
+  margin-top: 20px;
+  padding-left: 10rem;
+  width: calc(100% - 30rem);
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
-.experience {
-  padding: 2rem 8rem; /* Adjust horizontal padding to fit within the viewport */
-  margin-top: 2rem; /* Adjust margin as needed */
-  width: calc(100% - 4rem); /* Adjust width to fit within the viewport */
-  box-sizing: border-box; /* Include padding in width calculation */
+.experience, .skills {
+  padding: 2rem 8rem;
+  margin-top: 2rem;
+  width: calc(100% - 4rem);
+  box-sizing: border-box;
   text-align: left;
 }
 
@@ -56,16 +56,6 @@
   text-align: left;
 }
 
-
-/* Skills Container */
-.skills {
-  padding: 2rem 8rem; /* Adjust horizontal padding as needed */
-  margin-top: 2rem; /* Adjust margin as needed */
-  width: calc(100% - 4rem); /* Ensure full width minus padding */
-  box-sizing: border-box; /* Include padding in width calculation */
-}
-
-/* Flexbox layout for prog and other-skills */
 .skill-list {
   display: flex;
   flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
@@ -73,23 +63,86 @@
   text-align: left;
 }
 
-/* Container for each skill section */
 .prog, .other-skills {
   flex: 1; /* Allow sections to grow equally */
   min-width: 300px; /* Ensure sections have a minimum width */
 }
 
-/* Titles inside each section */
 .prog h2, .other-skills h2 {
   margin: 0;
   padding-bottom: 1rem;
 }
 
-/* Style for skill lists */
 ul {
   list-style-type: disc;
   padding-left: 1.5rem; /* Adjust padding for list items */
 }
 
+/* Media Queries */
 
+/* Styles for tablets (screens less than 768px wide) */
+@media (max-width: 768px) {
+  .abt-title {
+    padding-left: 5rem;
+    font-size: 1.5rem;
+  }
 
+  .line {
+    width: 60rem;
+    margin-left: 5rem;
+  }
+
+  .abt-content {
+    padding-left: 5rem;
+    width: calc(100% - 15rem);
+    font-size: 1rem;
+  }
+
+  .experience, .skills {
+    padding: 1.5rem 4rem;
+    margin-top: 1.5rem;
+    width: calc(100% - 3rem);
+  }
+
+  .skill-list {
+    gap: 1rem;
+  }
+
+  .prog, .other-skills {
+    min-width: 200px;
+  }
+}
+
+/* Styles for phones (screens less than 480px wide) */
+@media (max-width: 480px) {
+  .abt-title {
+    padding-left: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .line {
+    width: 40rem;
+    margin-left: 2rem;
+  }
+
+  .abt-content {
+    padding-left: 2rem;
+    width: calc(100% - 10rem);
+    font-size: 0.9rem;
+  }
+
+  .experience, .skills {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  .skill-list {
+    gap: 0.5rem;
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .prog, .other-skills {
+    min-width: 100%;
+  }
+}

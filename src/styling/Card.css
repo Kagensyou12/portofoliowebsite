@@ -1,38 +1,69 @@
 .card {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    margin: 20px;
-    transition: transform 0.2s;
-    margin-top: 10rem;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  margin: 20px;
+  transition: transform 0.2s;
+  margin-top: 10rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Media Queries */
+
+/* Styles for tablets (screens less than 768px wide) */
+@media (max-width: 768px) {
+  .card {
+    width: 250px;
   }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card-image {
-    width: 15rem;
-    height: 200px;
-    object-fit: cover;
-    margin-top: 20px;
-    border-radius: 10px;
-  }
-  
-  .card-content {
-    padding: 16px;
-  }
-  
+
   .card-title {
-    font-size: 1.5rem;
-    margin: 0 0 10px 0;
+    font-size: 1.3rem;
   }
-  
+
   .card-description {
-    font-size: 1rem;
-    color: #555;
+    font-size: 0.9rem;
   }
-  
+}
+
+/* Styles for phones (screens less than 480px wide) */
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    margin: 10px 0; /* Adjust margin to fit cards within the screen */
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-description {
+    font-size: 0.8rem;
+  }
+}

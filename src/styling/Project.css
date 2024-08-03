@@ -7,39 +7,73 @@
     position: relative; /* Ensure the container is positioned relatively */
     box-sizing: border-box;
     margin-left: 10rem;
-}
-
-.project-holder {
+  }
+  
+  .project-holder {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center children horizontally */
     width: 100%; /* Ensure it takes full width */
     position: relative; /* Make sure the holder is positioned relatively */
-}
-
-.title-container {
+  }
+  
+  .title-container {
     position: absolute; /* Position title absolutely within .project-holder */
     top: 10%; /* Adjust top position */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center title by offsetting its width */
     z-index: 10; /* Ensure the title is above the cards */
-}
-
-.project-title {
+  }
+  
+  .project-title {
     text-align: center;
     font-size: large;
     margin: 0;
-  align-items: center;
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-}
-
-.project-content {
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .project-content {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping if there are too many cards */
     justify-content: center; /* Center cards horizontally */
     gap: 10rem; /* Space between cards */
     position: relative; /* Ensure it’s below the title */
     z-index: 1; /* Ensure cards are below the title */
-}
+  }
+  
+  /* Media Queries */
+  
+  /* Styles for tablets (screens less than 768px wide) */
+  @media (max-width: 768px) {
+    .project-page {
+      margin-left: 5rem; /* Reduce margin for smaller screens */
+    }
+  
+    .title-container {
+      top: 5%; /* Adjust top position for smaller screens */
+    }
+  
+    .project-content {
+      gap: 5rem; /* Reduce space between cards */
+    }
+  }
+  
+  /* Styles for phones (screens less than 480px wide) */
+  @media (max-width: 480px) {
+    .project-page {
+      margin-left: 1rem; /* Further reduce margin for very small screens */
+    }
+  
+    .title-container {
+      top: 2%; /* Further adjust top position for very small screens */
+    }
+  
+    .project-content {
+      flex-direction: column; /* Stack cards vertically */
+      gap: 2rem; /* Further reduce space between cards */
+    }
+  }
+  
