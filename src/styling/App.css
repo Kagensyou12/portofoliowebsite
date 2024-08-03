@@ -295,6 +295,7 @@ header, footer {
     max-width: 100%; /* Full width */
     padding-right: 0;
     text-align: center; /* Center text */
+    margin-top : -3rem;
   }
 
   .image-container {
