@@ -64,16 +64,17 @@
   /* Styles for phones (screens less than 480px wide) */
   @media (max-width: 480px) {
     .project-page {
-      margin-left: 1rem; /* Further reduce margin for very small screens */
+      margin-left: 0rem; /* Further reduce margin for very small screens */
     }
   
     .title-container {
-      top: 2%; /* Further adjust top position for very small screens */
+      top: -3%; /* Further adjust top position for very small screens */
     }
   
     .project-content {
+      margin-top: 2rem;
       flex-direction: column; /* Stack cards vertically */
-      gap: 2rem; /* Further reduce space between cards */
+      gap: 3rem; /* Further reduce space between cards */
     }
   }
   

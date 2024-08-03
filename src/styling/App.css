@@ -1,8 +1,8 @@
+/* General styles */
 html, body {
   height: 100%;
   margin: 0;
   background-color: #000435;
-  /* overflow: hidden; */
 }
 
 .App {
@@ -12,113 +12,15 @@ html, body {
   flex-direction: column;
 }
 
-
-
-
-
-/* Styles for tablets (screens less than 768px wide) */
-/* @media (max-width: 768px) {
-  body {
-    font-size: 14px;
-    padding: 15px;
-}
-
-  .p1 {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-    padding: 10px;
-  }
-
-  .text-content {
-    max-width: 100%;
-    padding-right: 0;
-    padding-top: 1rem;
-    text-align: center;
-  }
-
-  .image-container {
-    margin-left: 0;
-    margin-top: 2rem;
-  }
-
-  .circular-image {
-    width: 200px;
-    height: 200px;
-  }
-} */
-
-/* Styles for phones (screens less than 480px wide) */
-
-
-
-  @media (max-width: 480px) {
-    body {
-      font-size: 12px;
-      padding: 10px;
-    }
-  
-    .header {
-      padding: 10px;
-      font-size: 14px;
-    }
-  
-    .p1 {
-      flex-direction: column; /* Stack items vertically on mobile */
-      align-items: center;
-      margin-left: 0;
-      padding: 10px;
-    }
-  
-    .text-content {
-      font-size: 16px;
-      text-align: center;
-      max-width: 100%; /* Full width */
-      padding-right: 0;
-    }
-  
-    .image-container {
-      margin-left: 0;
-      margin-top: 2rem;
-    }
-  
-    .circular-image {
-      width: 150px;
-      height: 150px;
-    }
-  
-    .btn-head {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-  
-    .btn-head button {
-      width: 100%;
-      padding: 10px;
-    }
-
-    .text-content {
-      max-width: 20rem; /* Adjust the width as needed */
-      padding-right: 10rem;
-      padding-top: 4rem;
-      text-align: left;
-      font-size: 20px;
-      font-family: 'Demi';
-    }
-  }
-  @media (max-width: 767px) {
-    .btn-head {
-      flex-direction: row; /* Change layout to row on mobile */
-      justify-content: flex-end; /* Align buttons to the right */
-    }
-
-
-  }
- 
-
 .body {
   flex: 1;
+  padding: 40px;
+  padding-top: 80px; /* Add space for the fixed header */
+  color: #333; /* Text color */
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+  gap: 80px;
 }
 
 header, footer {
@@ -140,7 +42,6 @@ header, footer {
   font-size: 16px; /* Font size */
   cursor: pointer; /* Pointer cursor on hover */
   border-radius: 5px; /* Rounded corners */
-  font-size: 15px;
   font-family: 'Demi';
 }
 
@@ -167,12 +68,11 @@ header, footer {
   align-items: flex-start; /* Align items to the start of the flex container */
   text-align: left;
   max-width: 1000px;
-  margin-left: 10rem;
+  margin: 5rem auto; /* Center align and provide margin from the top */
   padding: 20px;
   box-sizing: border-box;
   justify-content: space-between;
   color: white;
-  margin-top: 5rem;
 }
 
 .text-content {
@@ -196,17 +96,6 @@ header, footer {
   border-radius: 50%; /* Make the image circular */
   object-fit: cover; /* Ensure the image covers the container without distortion */
   padding: 2rem;
-}
-
-.body {
-  flex: 1; /* Takes up the remaining space */
-  padding: 40px;
-  padding-top: 80px; /* Add space for the fixed header */
-  color: #333; /* Text color */
-  display: flex;
-  align-items: flex-start;
-  text-align: center;
-  gap: 80px;
 }
 
 .footer {
@@ -309,4 +198,123 @@ header, footer {
 
 * {
   font-family: 'Demi', sans-serif;
+}
+
+/* Responsive Styles */
+
+/* Styles for tablets (screens less than 768px wide) */
+@media (max-width: 768px) {
+  .body {
+    padding: 20px;
+    padding-top: 60px;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px;
+  }
+
+  .p1 {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    margin-left: 0;
+    padding: 10px;
+    text-align: center; /* Center text */
+  }
+
+  .text-content {
+    max-width: 100%; /* Full width */
+    padding-right: 0;
+    padding-top: 1rem;
+    text-align: center; /* Center text */
+  }
+
+  .image-container {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .circular-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .btn-head {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn-head button {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Styles for phones (screens less than 480px wide) */
+@media (max-width: 480px) {
+  .body {
+    padding: 10px;
+    padding-top: 50px;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px;
+  }
+
+  .header {
+    padding: 10px;
+    font-size: 14px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    position: relative; /* Ensure the header is not fixed */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  }
+
+  .btn-head {
+    display: flex;
+    flex-direction: row; /* Arrange buttons in a row */
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center buttons horizontally */
+    width: 100%; /* Ensure buttons take full width */
+  }
+
+  .btn-head button {
+    font-size: 12px; /* Adjust button text size */
+    padding: 8px 16px; /* Adjust padding */
+  }
+
+
+
+  .p1 {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .text-content {
+    font-size: 14px; /* Smaller text size */
+    max-width: 100%; /* Full width */
+    padding-right: 0;
+    text-align: center; /* Center text */
+  }
+
+  .image-container {
+    margin-left:6rem;
+    margin-top: -5rem;
+  }
+
+  .circular-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* .btn-head {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  } */
+
+  /* .btn-head button {
+    width: 100%;
+    padding: 10px;
+  } */
 }

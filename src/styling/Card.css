@@ -66,4 +66,7 @@
   .card-description {
     font-size: 0.8rem;
   }
+  .card:hover {
+    transform: scale(1.05);
+  }
 }
