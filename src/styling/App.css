@@ -1,14 +1,25 @@
 html, body {
   height: 100%;
   margin: 0;
-  background-color: #FFF0DB; /* Change this to your desired background color */
+  background-color: #000435;
 }
 
 .App {
+  position: relative;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Full viewport height */
 }
+
+.body {
+  flex: 1;
+}
+
+header, footer {
+  position: relative;
+  z-index: 100; /* Ensure header/footer are above the canvas */
+}
+
 
 .btn-head {
   display: flex;
@@ -17,9 +28,9 @@ html, body {
 }
 
 .btn-head button {
-  background-color: #EED9C4; /* Button background color */
+  background-color: #102C57; /* Button background color */
   border: none;
-  color: #323232; /* Button text color */
+  color: white; /* Button text color */
   padding: 10px 20px; /* Padding inside the button */
   font-size: 16px; /* Font size */
   cursor: pointer; /* Pointer cursor on hover */
@@ -35,8 +46,8 @@ html, body {
 
 .header {
   padding: 20px;
-  background-color: #EED9C4;
-  color: #323232; /* Text color */
+  background-color: #102C57;
+  color: #FFC55A; /* Text color */
   text-align: center;
   width: 100%; /* Ensure it spans the full width */
   position: fixed; /* Keep the header fixed at the top */
@@ -56,6 +67,8 @@ html, body {
   padding: 20px;
   box-sizing: border-box;
   justify-content: space-between;
+  color: white;
+  margin-top: 5rem;
   /* font-size: 20px; */
   
 }
@@ -73,7 +86,7 @@ html, body {
 .image-container {
   flex-shrink: 0; /* Prevent the image from shrinking */
   margin-left: 40px; /* Optional: add some margin to the left */
-  margin-top: 8rem;
+  margin-top: 10rem;
 
 }
 
@@ -226,4 +239,6 @@ html, body {
 * {
   font-family: 'Demi', sans-serif;
 }
+
+
 

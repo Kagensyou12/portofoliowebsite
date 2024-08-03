@@ -6,6 +6,7 @@
   height: 100%; 
   position: relative; /* Ensure the container is positioned relatively */
   box-sizing: border-box; /* Ensure padding and borders are included in width */
+  color: white;
 }
 
 .abt-wrapper {
@@ -30,7 +31,7 @@
   margin: 0 auto; /* Center the line */
   border: 0;
   height: 1px;
-  background: black; /* Line color */
+  background: white; /* Line color */
   margin-left: 15rem;
 }
 

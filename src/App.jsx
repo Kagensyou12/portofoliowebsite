@@ -7,6 +7,7 @@ import AboutMe from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 import Project from './pages/Project.jsx';
 import 'animate.css/animate.css';
+import StarryBackground from './background-effect.jsx';
 
 function Home() {
   return (
@@ -36,6 +37,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+      <StarryBackground />
         <Header />
         <main className="body">
           <Routes>
@@ -55,7 +57,7 @@ function App() {
               path="/contact"
               element={
                 <div className="animate__animated animate__fadeIn">
-                  {console.log('Rendering Contact component')}
+                  {/* {console.log('Rendering Contact component')} */}
                   <Contact />
                 </div>
               }
@@ -71,7 +73,7 @@ function App() {
             />
           </Routes>
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );

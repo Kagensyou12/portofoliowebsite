@@ -6,7 +6,7 @@
     height: 100%;
     position: relative; /* Ensure the container is positioned relatively */
     box-sizing: border-box;
-    margin-left: 16rem;
+    margin-left: 10rem;
 }
 
 .project-holder {
@@ -32,6 +32,7 @@
   align-items: center;
   font-size: 30px;
   font-weight: bold;
+  color: white;
 }
 
 .project-content {

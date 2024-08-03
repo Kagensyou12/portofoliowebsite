@@ -4,8 +4,10 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 100%;
     position: relative;
     box-sizing: border-box;
+    color: white;
 }
 
 .contact-holder {
@@ -20,14 +22,14 @@
     text-align: center;
     font: large;
     margin: 0;
-    padding-left: 15rem;
+    padding-left: 10rem;
 }
 
 .contact-info {
     display: flex;
     flex-direction: row;
     gap: 1rem; /* Space between the items */
-    padding-left: 15rem;
+    padding-left: 10rem;
     width: 100%;
 }
 
@@ -91,8 +93,8 @@
     margin: 0 auto; /* Center the line */
     border: 0;
     height: 1px;
-    background: black; /* Line color */
-    margin-left: 15rem;
+    background: white; /* Line color */
+    margin-left: 10rem;
 }
 
 /* Align Instagram link with the Social Media heading */
