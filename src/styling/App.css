@@ -11,6 +11,29 @@ html, body {
   flex-direction: column;
 }
 
+/* Default styles for desktop */
+body {
+  font-size: 16px;
+  padding: 20px;
+}
+
+/* Styles for tablets (screens less than 768px wide) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
+/* Styles for phones (screens less than 480px wide) */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+
 .body {
   flex: 1;
 }
