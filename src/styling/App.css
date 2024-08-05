@@ -249,7 +249,7 @@ header, footer {
 }
 
 /* Styles for phones (screens less than 480px wide) */
-@media (max-width: 480px) {
+@media (max-width: 480px) {  
   .body {
     padding: 10px;
     padding-top: 50px;
@@ -295,7 +295,7 @@ header, footer {
     max-width: 100%; /* Full width */
     padding-right: 0;
     text-align: center; /* Center text */
-    margin-top : -3rem;
+    margin-top : -5rem;
   }
 
   .image-container {

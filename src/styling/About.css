@@ -5,17 +5,17 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  position: relative; /* Ensure the container is positioned relatively */
-  box-sizing: border-box; /* Ensure padding and borders are included in width */
+  position: relative;
+  box-sizing: border-box;
   color: white;
 }
 
 .abt-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align children to the left */
+  align-items: flex-start; /* Align children to the left for larger screens */
   margin-top: -15rem;
-  width: 100%; /* Ensure it takes full width */
+  width: 100%;
 }
 
 .abt-title {
@@ -28,10 +28,10 @@
 
 .line {
   width: 80rem;
-  margin: 0 auto; /* Center the line */
+  margin: 0 auto;
   border: 0;
   height: 1px;
-  background: white; /* Line color */
+  background: white;
   margin-left: 10rem;
 }
 
@@ -58,14 +58,14 @@
 
 .skill-list {
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
-  gap: 2rem; /* Add space between columns */
+  flex-wrap: wrap;
+  gap: 2rem;
   text-align: left;
 }
 
 .prog, .other-skills {
-  flex: 1; /* Allow sections to grow equally */
-  min-width: 300px; /* Ensure sections have a minimum width */
+  flex: 1;
+  min-width: 300px;
 }
 
 .prog h2, .other-skills h2 {
@@ -75,7 +75,54 @@
 
 ul {
   list-style-type: disc;
-  padding-left: 1.5rem; /* Adjust padding for list items */
+  padding-left: 1.5rem;
 }
 
+/* Phone Size Adjustments */
+@media (max-width: 480px) {
+  .abt-wrapper {
+    align-items: center; /* Center align for phone screens */
+    margin-top: -4rem; /* Reset margin-top */
+    padding: 0 1rem; /* Add padding for small screens */
+  }
 
+  .abt-title {
+    font-size: 1.2rem; /* Adjust font size for phone screens */
+    padding-left: 0; /* Remove left padding */
+    margin-top: 1rem; /* Adjust margin for phone screens */
+  }
+
+  .line {
+    width: 100%; /* Full width for phone screens */
+    margin: 1rem 0; /* Adjust margin for phone screens */
+  }
+
+  .abt-content {
+    text-align: center; /* Center text for phone screens */
+    padding-left: 0; /* Remove left padding */
+    width: 100%; /* Full width for phone screens */
+    font-size: 1rem; /* Adjust font size for phone screens */
+    margin: 1rem 0; /* Adjust margin for phone screens */
+  }
+
+  .experience, .skills {
+    padding: 1rem; /* Adjust padding for phone screens */
+    margin-top: 1rem; /* Adjust margin for phone screens */
+    width: 100%; /* Full width for phone screens */
+    text-align: center; /* Center text for phone screens */
+  }
+
+  .skill-title {
+    text-align: center;
+  }
+
+  .skill-list {
+    flex-direction: column; /* Stack items vertically for phone screens */
+    gap: 1rem; /* Reduce gap for phone screens */
+  }
+
+  ul {
+    padding-left: 0; /* Remove padding for phone screens */
+    text-align: left; /* Center align text for phone screens */
+  }
+}

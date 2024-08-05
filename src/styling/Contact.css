@@ -1,166 +1,186 @@
 .contact-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    box-sizing: border-box;
-    color: white;
-  }
-  
-  .contact-holder {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 10rem;
-    width: 100%;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  color: white;
+}
+
+.contact-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10rem;
+  width: 100%;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: large;
+  margin: 0;
+  padding-left: 10rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; /* Space between the items */
+  padding-left: 10rem;
+  width: 100%;
+}
+
+.contact-info1, .contact-info2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align items to the start */
+  width: 100%;
+}
+
+.contact-info1 h1, .contact-info2 h1 {
+  margin: 0;
+}
+
+.contact-info1 a, .contact-info2 a {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent */
+  margin-left: 1rem; /* Space between the label and the link */
+}
+
+.contact-info1 a {
+  margin-top: 10px;
+}
+
+.contact-info2 {
+  display: flex;
+  flex-direction: row; /* Align heading and list horizontally */
+  align-items: flex-start; /* Align items to the start */
+  gap: 1rem; /* Space between heading and list */
+}
+
+.contact-info2 h1 {
+  margin: 0;
+}
+
+.contact-info2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 1rem; /* Space between the social media links */
+}
+
+.contact-info2 ul li {
+  display: block; /* Ensure the list items are block elements */
+}
+
+.contact-info2 ul li a {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0; /* Add padding for equal length appearance */
+  text-decoration: none;
+  color: inherit;
+  text-align: left; /* Align text to the left */
+  box-sizing: border-box;
+}
+
+.line1 {
+  width: 80rem; /* Adjust this value to expand the line width */
+  margin: 0 auto; /* Center the line */
+  border: 0;
+  height: 1px;
+  background: white; /* Line color */
+  margin-left: 10rem;
+}
+
+/* Align Instagram link with the Social Media heading */
+.contact-info2 ul li:first-child a {
+  margin-top: 0; /* Reset margin for the first item */
+}
+
+.contact-info2 h1, .contact-info2 ul li:first-child a {
+  align-self: flex-start; /* Align items to the start */
+  margin-top: 0.5rem; /* Adjust this value to align with the heading */
+}
+
+/* Media Queries */
+
+/* Styles for tablets (screens less than 768px wide) */
+@media (max-width: 768px) {
   .contact-title {
-    text-align: center;
-    font-size: large;
-    margin: 0;
-    padding-left: 10rem;
-  }
-  
-  .contact-info {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem; /* Space between the items */
-    padding-left: 10rem;
-    width: 100%;
-  }
-  
-  .contact-info1, .contact-info2 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start; /* Align items to the start */
-    width: 100%;
-  }
-  
-  .contact-info1 h1, .contact-info2 h1 {
-    margin: 0;
-  }
-  
-  .contact-info1 a, .contact-info2 a {
-    text-decoration: none;
-    color: inherit; /* Inherit the color from the parent */
-    margin-left: 1rem; /* Space between the label and the link */
-  }
-  
-  .contact-info1 a {
-    margin-top: 10px;
-  }
-  
-  .contact-info2 {
-    display: flex;
-    flex-direction: row; /* Align heading and list horizontally */
-    align-items: flex-start; /* Align items to the start */
-    gap: 1rem; /* Space between heading and list */
-  }
-  
-  .contact-info2 h1 {
-    margin: 0;
-  }
-  
-  .contact-info2 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 1rem; /* Space between the social media links */
-  }
-  
-  .contact-info2 ul li {
-    display: block; /* Ensure the list items are block elements */
-  }
-  
-  .contact-info2 ul li a {
-    display: inline-block;
-    width: 100%;
-    padding: 0.5rem 0; /* Add padding for equal length appearance */
-    text-decoration: none;
-    color: inherit;
-    text-align: left; /* Align text to the left */
-    box-sizing: border-box;
-  }
-  
-  .line1 {
-    width: 80rem; /* Adjust this value to expand the line width */
-    margin: 0 auto; /* Center the line */
-    border: 0;
-    height: 1px;
-    background: white; /* Line color */
-    margin-left: 10rem;
-  }
-  
-  /* Align Instagram link with the Social Media heading */
-  .contact-info2 ul li:first-child a {
-    margin-top: 0; /* Reset margin for the first item */
-  }
-  
-  .contact-info2 h1, .contact-info2 ul li:first-child a {
-    align-self: flex-start; /* Align items to the start */
-    margin-top: 0.5rem; /* Adjust this value to align with the heading */
-  }
-  
-  /* Media Queries */
-  
-  /* Styles for tablets (screens less than 768px wide) */
-  @media (max-width: 768px) {
-    .contact-title {
       padding-left: 5rem; /* Adjust padding for smaller screens */
-    }
-  
-    .contact-info {
+  }
+
+  .contact-info {
       flex-direction: column; /* Stack items vertically */
       padding-left: 5rem; /* Adjust padding for smaller screens */
-    }
-  
-    .contact-info1, .contact-info2 {
+  }
+
+  .contact-info1, .contact-info2 {
       flex-direction: column; /* Stack items vertically */
       align-items: flex-start; /* Align items to the start */
-    }
-  
-    .contact-info1 a, .contact-info2 a {
+  }
+
+  .contact-info1 a, .contact-info2 a {
       margin-left: 0; /* Remove left margin for smaller screens */
-    }
-  
-    .line1 {
+  }
+
+  .line1 {
       width: 100%;
       margin-left: 0;
-    }
   }
-  
-  /* Styles for phones (screens less than 480px wide) */
-  @media (max-width: 480px) {
-    .contact-title {
-      padding-left: 1rem; /* Further reduce padding for very small screens */
-    }
-  
-    .contact-info {
-      padding-left: 1rem; /* Further reduce padding for very small screens */
-    }
-  
-    .contact-info1, .contact-info2 {
-      align-items: center; /* Center items on very small screens */
-    }
-  
-    .contact-info1 a, .contact-info2 a {
-      margin-left: 0; /* Remove left margin for very small screens */
+}
+
+/* Styles for phones (screens less than 480px wide) */
+@media (max-width: 480px) {
+  .contact-title {
+      padding-left: 3rem; /* Remove padding for smaller screens */
+      font-size: medium; /* Adjust font size for better readability */
       text-align: center; /* Center-align text */
-    }
-  
-    .contact-info2 ul {
+      margin-top: -7rem;
+  }
+
+  .contact-page {
+    padding-left: 5rem;
+  }
+
+  .contact-info {
+      padding-left: 0; /* Remove padding for smaller screens */
+      gap: 1rem; /* Adjust gap between items */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center-align items */
+      text-align: center; /* Center-align text */
+      margin-top: 2rem;
+  }
+
+  .contact-info1, .contact-info2 {
+      align-items: center; /* Center-align items */
+      text-align: center; /* Center-align text */
+      margin-left: 2px;
+  }
+
+  .contact-info2 {
+    margin-left: 8px;
+  }
+
+  .contact-info1 a, .contact-info2 a {
+      margin-left: 0; /* Remove left margin for smaller screens */
+      text-align: center; /* Center-align text */
+  }
+
+  .contact-info2 ul {
       gap: 0.5rem; /* Reduce gap between links */
-    }
-  
-    .line1 {
+      padding: 0; /* Remove padding */
+  }
+
+  .line1 {
       width: 100%;
       margin-left: 0;
-    }
+      margin-top: 2rem; /* Add top margin for spacing */
   }
-  
+}
+
