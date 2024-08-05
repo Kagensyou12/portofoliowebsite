@@ -141,11 +141,11 @@
       padding-left: 3rem; /* Remove padding for smaller screens */
       font-size: medium; /* Adjust font size for better readability */
       text-align: center; /* Center-align text */
-      margin-top: -7rem;
+      margin-top: -10rem;
   }
 
   .contact-page {
-    padding-left: 5rem;
+    padding-left: 5rem
   }
 
   .contact-info {
@@ -164,7 +164,7 @@
   }
 
   .contact-info2 {
-    margin-left: 8px;
+    margin-left: 6px;
   }
 
   .contact-info1 a, .contact-info2 a {
