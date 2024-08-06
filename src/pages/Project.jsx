@@ -15,16 +15,19 @@ function Project() {
                         image="/FArbucks.jpg"
                         title="FArbucks"
                         desc="Website for coffee lovers"
+                        link="/projects/farbucks"
                     />
                     <Card
                         image="/Jankenpon.jpg"
                         title="Jankenpon"
                         desc="Website for playing simple game of rock paper scissors."
+                        link="/projects/jankenpon"
                     />
                     <Card
-                        image="/portofoliowebsite.jpg"
+                        image="/portofoliowebsite2.png"
                         title="Portofolio"
                         desc="My Portofolio in a form of a Website."
+                        link="/projects/portofolio"
                     />
                 </div>
             </div>

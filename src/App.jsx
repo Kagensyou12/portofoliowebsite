@@ -6,6 +6,9 @@ import Footer from './components/Footer.jsx';
 import AboutMe from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 import Project from './pages/Project.jsx';
+import FArbucks from './pages/FArbucks.jsx';
+import Jankenpon from './pages/Jankenpon.jsx';
+import Portofolio from './pages/Portofolio.jsx';
 import 'animate.css/animate.css';
 import StarryBackground from './background-effect.jsx';
 
@@ -27,7 +30,7 @@ function Home() {
         </div>
       </div>
       <div className="image-container">
-        <img src="\Portofolio.jpg" alt="Portofolio" className="circular-image animate__animated animate__zoomIn" />
+        <img src="/Portofolio.jpg" alt="Portofolio" className="circular-image animate__animated animate__zoomIn" />
       </div>
     </>
   );
@@ -37,7 +40,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <StarryBackground />
+        <StarryBackground />
         <Header />
         <main className="body">
           <Routes>
@@ -57,7 +60,6 @@ function App() {
               path="/contact"
               element={
                 <div className="animate__animated animate__fadeIn">
-                  {/* {console.log('Rendering Contact component')} */}
                   <Contact />
                 </div>
               }
@@ -71,8 +73,36 @@ function App() {
                 </div>
               }
             />
+            <Route
+              exact
+              path="/projects/farbucks"
+              element={
+                <div className="animate__animated animate__fadeIn">
+                  <FArbucks />
+                </div>
+              }
+            />
+            <Route
+              exact
+              path="/projects/jankenpon"
+              element={
+                <div className="animate__animated animate__fadeIn">
+                  <Jankenpon />
+                </div>
+              }
+            />
+            <Route
+              exact
+              path="/projects/portofolio"
+              element={
+                <div className="animate__animated animate__fadeIn">
+                  <Portofolio />
+                </div>
+              }
+            />
           </Routes>
         </main>
+        {/* Uncomment the Footer component if needed */}
         {/* <Footer /> */}
       </div>
     </Router>

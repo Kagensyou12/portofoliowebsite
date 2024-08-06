@@ -1,0 +1,83 @@
+.farbucks {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    position: relative; /* Needed for absolute positioning of the button */
+}
+
+.FAr-title {
+    color: white;
+    text-align: center;
+    width: 90vw;
+    padding-left: 40px;
+    padding-top: 4rem;
+    font-size: 30px;
+}
+
+.back-button {
+    position: absolute; /* Keep the button in a fixed position */
+    top: 40px; /* Adjust top position as needed */
+    left: 10px; /* Adjust left position as needed */
+    cursor: pointer;
+}
+
+.back-button img {
+    width: 50px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.FAr-img {
+    margin-top: 20px; /* Add space between the title/button and the image */
+}
+
+.FAr-img img {
+    width: 800px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+}
+
+.FAr-p1 {
+    padding-top: 4rem;
+    width: 50rem;
+    text-align: left;
+    color: white;
+}
+
+.FAr-p2 {
+    padding-top: 1rem;
+    width: 50rem;
+    text-align: left;
+    color: white;
+}
+
+/* Media Query for screens 480px wide or smaller */
+@media (max-width: 480px) {
+    .FAr-title {
+        width: 90vw;
+        font-size: 24px; /* Adjust font size for smaller screens */
+        padding-left: 20px; /* Reduce padding for smaller screens */
+        padding-top: 2rem; /* Reduce top padding for smaller screens */
+    }
+
+    .back-button {
+        top: 5px; /* Adjust top position for smaller screens */
+        left: 5px; /* Adjust left position for smaller screens */
+    }
+
+    .back-button img {
+        width: 30px; /* Reduce button size for smaller screens */
+    }
+
+    .FAr-img img {
+        width: 100%; /* Make image responsive */
+        max-width: 100%; /* Ensure it doesn't exceed container width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 20px;
+    }
+
+    .FAr-p1, .FAr-p2 {
+        width: 90vw; /* Adjust width for smaller screens */
+        padding-top: 2rem; /* Reduce top padding for smaller screens */
+    }
+}
