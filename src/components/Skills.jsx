@@ -11,6 +11,7 @@ function Skills() {
                     <h2>Software Engineer Related Skills</h2>
                     <ul>
                         <li>React JS</li>
+                        <li>Node JS & Express JS</li>
                         <li>HTML & CSS</li>
                         <li>JavaScript & TypeScript</li>
                         <li>Laravel</li>
