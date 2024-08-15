@@ -17,7 +17,8 @@ function Skills() {
                         <li>Laravel</li>
                         <li>PHP</li>
                         <li>.NET</li>
-                        <li>Database</li>
+                        <li>mySQL</li>
+                        <li>Firebase</li>
                         <li>Java</li>
                         <li>C#</li>
                         <li>C</li>
